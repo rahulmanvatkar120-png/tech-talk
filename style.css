@@ -751,6 +751,15 @@ body {
 .footer-bottom p {
     font-size: 0.875rem;
     color: var(--gray-600);
+    margin-bottom: 0.5rem;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 0.85rem;
+    color: var(--gold);
 }
 
 @keyframes fadeSlideUp {
