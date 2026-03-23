@@ -1,3 +1,5 @@
+const API_URL = 'https://techtalk-backend.onrender.com/api';
+
 const beeModel = document.getElementById("bee-model");
 const sections = Array.from(document.querySelectorAll("section"));
 const beeSound = document.getElementById("bee-sound");
@@ -252,7 +254,7 @@ if (contactForm) {
         submitBtn.disabled = true;
         
         try {
-            const response = await fetch('http://localhost:3001/api/inquiries', {
+            const response = await fetch(API_URL + '/inquiries', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name, email, phone, tech, message })
