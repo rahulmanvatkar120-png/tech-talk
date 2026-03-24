@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Talk - Scan to Visit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: #000;
+        }
+        .qr-container {
+            text-align: center;
+            padding: 2rem;
+        }
+        h1 {
+            color: #d4a853;
+            margin-bottom: 1rem;
+        }
+        img {
+            border: 5px solid #d4a853;
+            border-radius: 10px;
+        }
+        p {
+            color: #fff;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="qr-container">
+        <h1>Tech Talk</h1>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://rahulmanvatkar120-png.github.io/tech-talk/" alt="QR Code">
+        <p>Scan to visit Tech Talk</p>
+    </div>
+</body>
+</html>
