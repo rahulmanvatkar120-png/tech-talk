@@ -418,8 +418,8 @@
     <script>
         const ADMIN_USER = 'admin';
         const ADMIN_PASS = 'techtalk1730';
-        const API_URL = 'https://techtalk-backend.onrender.com/api/inquiries';
-        const STATS_URL = 'https://techtalk-backend.onrender.com/api/stats';
+        const API_URL = window.location.origin + '/api/inquiries';
+        const STATS_URL = window.location.origin + '/api/stats';
         
         const loginForm = document.getElementById('loginForm');
         const loginOverlay = document.getElementById('loginOverlay');
