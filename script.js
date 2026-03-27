@@ -1,4 +1,4 @@
-const API_URL = 'https://techtalk-backend.onrender.com/api';
+const API_URL = window.location.origin + '/api';
 
 const beeModel = document.getElementById("bee-model");
 const sections = Array.from(document.querySelectorAll("section"));

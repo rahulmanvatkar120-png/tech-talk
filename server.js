@@ -127,6 +127,14 @@ app.get('/admin', (req, res) => {
     res.sendFile(path.join(__dirname, 'admin.html'));
 });
 
+app.get('/scan', (req, res) => {
+    res.sendFile(path.join(__dirname, 'scan.html'));
+});
+
+app.get('/qrcode', (req, res) => {
+    res.sendFile(path.join(__dirname, 'qrcode.html'));
+});
+
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
     console.log(`Admin panel: http://localhost:${PORT}/admin`);
